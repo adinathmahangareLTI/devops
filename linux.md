@@ -30,7 +30,7 @@
    - *ps* display active processes, -a: all
    - *chmod <permission_number> <file_path>* changing permission for file/directory, owner-group-others
         - read: 4
-        - write: 2client_loop: send disconnect: Connection reset
+        - write: 2
         - execute: 1
    - *chgrp <user_name> <destination_path>* changing group of file/directory
    - *useradd <user_name>* adding new user, users saved in /etc/passwd
