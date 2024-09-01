@@ -4,26 +4,37 @@
 
 1. Create AWS EC2 instance for amazon linux and connect with command prompt.
 2. Basic commands for regular user
-   - **ls**     list, -a: show hidden
-   - **ll**     detailed list with permissions
-   - **df**     display disk filesystem info
-   - **whoami** shows current user name
-   - **rm**     remove file
-   - **pwd**    present working directory
-   - **mkdir <directory_name>**  create directory
-   - **rmdir <directory_name>**  remove directory, -r: recursively
-   - **touch <file_name>** creates a file
-   - **cat <file_name>** display contents in file, > add contents, >> appends contents
-   - **date**   current date and timestamp
-   - **cal**    calender
-   - **cd <directory_name>**     change directory
-   - **mv <old_name> <new_name>**     move file or rename
-   - **cp <source> <destination>**  copy sorce file to destination
-   - **exit** exits from current user
-   - **clear** clears terminal
-   - **history** shows command history
+   - *ls*     list, -a: show hidden
+   - *ll*     detailed list with permissions
+   - *df*     display disk filesystem info
+   - *whoami* shows current user name
+   - *rm*     remove file
+   - *pwd*    present working directory
+   - *mkdir <directory_name>*  create directory
+   - *rmdir <directory_name>*  remove directory, -r: recursively
+   - *touch <file_name>* creates a file
+   - *cat <file_name>* display contents in file, > add contents, >> appends contents
+   - *date*   current date and timestamp
+   - *cal*    calender
+   - *cd <directory_name>*     change directory
+   - *mv <old_name> <new_name>*     move file or rename
+   - *cp <source_file> <destination_path>*  copy source file to destination
+   - *exit* exits from current user
+   - *clear* clears terminal
+   - *history* shows command history
+   - *wget <http_link>* direct download from internet
 
 3. Basic commands for root user
-   - **sudo su -**    switch user to root
-4. 
-
+   - *sudo su -*    switch user to root
+   - *whereis <linux_command>* shows path where command is stored
+   - *ps* display active processes, -a: all
+   - *chmod <permission_number> <file_path>* changing permission for file/directory, owner-group-others
+        - read: 4
+        - write: 2client_loop: send disconnect: Connection reset
+        - execute: 1
+   - *chgrp <user_name> <destination_path>* changing group of file/directory
+   - *useradd <user_name>* adding new user, users saved in /etc/passwd
+   - *<user_name> passwd* adding password to user, passwords saved in /etc/shadow
+   - *kill <process_id>* killing process by PID
+   - *ssh-keygen* creating public-private key pair, stored at .ssh file in home directory, .pub: public key
+   - *systemctl start/stop/enable/disable/status <service_name>* manages system serices states, example: sshd
