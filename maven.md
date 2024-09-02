@@ -26,11 +26,21 @@ Maven-Integration
     - Complete the steps in jenkins, access password using cat command
 
 3. Establish connection between github repo and jenkins dashboard
-    - Configure>>Genrate token: github_webhook
-    - In github repo>>repo settings>>add webhook>>Copy path of jenkins http link>>Application/json>> Add token as security key>> check ifit gets green tick
+    - Configure>> Genrate token: github_webhook
+    - In github repo>> repo settings>> add webhook>> Copy path of jenkins http link>> Application/json>> Add token as security key>> check ifit gets green tick
 
 4. Installing and configuring Maven
     - Install git on jenkins server: *yum install maven*
     - Check maven version: *maven --version*
     - On jenkins dashboard install plugin **Maven Integration**
+    - In installed plugins >> search github >> disable second >> enable third
+    - In tools >> add java jdk path and maven path >> restart jenkins
+
+5. Create new item for building project
+    - select maven project
+    - Add git repo in source code
+    - change branch to main
+    - save and apply
+    - build 
+
 
