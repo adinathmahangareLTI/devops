@@ -38,3 +38,86 @@
    - *kill <process_id>* killing process by PID
    - *ssh-keygen* creating public-private key pair, stored at .ssh file in home directory, .pub: public key
    - *systemctl start/stop/enable/disable/status <service_name>* manages system serices states, example: sshd
+
+
+
+4. Adding sudoers
+
+- useradd virat
+- passwd virat
+- tail /etc/passwd
+- whereis useradd   (copy first path)
+- whereis passwd    (copy first path)
+- vim /etc/sudoers
+- add lines after root
+  virat   ALL=(ALL)       /usr/sbin/useradd, /usr/bin/passwd, ! /usr/bin/passwd root
+  (useraname)   (all hosts: all users)      (commands that can be run by sudoer)
+
+    we are giving sudoer permission to add new user, change password, but he should not change password of root
+- su virat      (switch user to virat)
+- sudo useradd rohit    (add rohit to machine as sudoer)
+- sudo passwd rohit     (add password for rohit as sudoer)
+
+- sudo passwd root
+  This message should displayed:  (Sorry, user virat is not allowed to execute '/usr/bin/passwd root' as root on practice.example.com.)
+- exit 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
