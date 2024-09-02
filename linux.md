@@ -51,6 +51,7 @@
 - vim /etc/sudoers
 - add lines after root
   virat   ALL=(ALL)       /usr/sbin/useradd, /usr/bin/passwd, ! /usr/bin/passwd root
+
   (useraname)   (all hosts: all users)      (commands that can be run by sudoer)
 
     we are giving sudoer permission to add new user, change password, but he should not change password of root
@@ -59,9 +60,37 @@
 - sudo passwd rohit     (add password for rohit as sudoer)
 
 - sudo passwd root
+
   This message should displayed:  (Sorry, user virat is not allowed to execute '/usr/bin/passwd root' as root on practice.example.com.)
 - exit 
 
+
+
+5. Group commands
+
+- groupadd devops   (add new group to machine)
+- useradd rutik     (add user rutik to machine) 
+- useradd snehal
+- usermod -G devops rutik       (add user rutik to group devops)
+- usermod -G devops snehal
+- tail /etc/group
+- grpadd cloud
+- usermod -aG cloud rutik       (append user rutik to group cloud, linux will only allow one group per user)
+- mkdir devops-practice
+- ll
+
+*output: drwxr-xr-x. 2 root root 6 Sep  2 03:49 devops-practice*
+- chgrp devops devops-practice      (changing default group to devops)
+
+*output: drwxr-xr-x. 2 root devops 6 Sep  2 03:49 devops-practice*
+
+- chown rutik devops-practice       (changing default owner of resource)
+
+*output: drwxr-xr-x. 2 rutik devops 6 Sep  2 03:49 devops-practice*
+
+- chmod 740 devops
+
+*output: drwxr-----. 2 rutik devops 6 Sep  2 03:49 devops-practice*
 
 
 
