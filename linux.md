@@ -88,9 +88,17 @@
 
 *output: drwxr-xr-x. 2 rutik devops 6 Sep  2 03:49 devops-practice*
 
-- chmod 740 devops
+- chmod 740 devops-practice         (chaning permissions for resource)
 
 *output: drwxr-----. 2 rutik devops 6 Sep  2 03:49 devops-practice*
+
+- chmod o+t devops-practice         (adding sticky-note to resource), other users cannot delete this resource
+
+*output: drwxr----T. 2 rutik devops 6 Sep  2 03:49 devops-practice*
+
+- cat /etc/passwd | grep rutik  (finding information about perticular user)
+
+*output: rutik:x:1003:1004::/home/rutik:/bin/bash* 
 
 
 
