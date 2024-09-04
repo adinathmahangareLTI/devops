@@ -1,6 +1,6 @@
 1. Create a new redhat instance : base-ami
 2. Add new HTTP port 80 in security groups
-3. *yum install update -y*
+3. *yum update -y*
 
 4. *yum install httpd -y*
 5. *cd /var/www/html/*
