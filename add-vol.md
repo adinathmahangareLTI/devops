@@ -27,6 +27,8 @@
 
 UUID="2fcc4dc3-04d1-47a6-9dcf-e60fe892a172"  /data  ext4  defaults  0   0
 
-26. *df -h* :mounted xvdb
-27. Reboot system
-28. *df -h* :still can see as mounted
+26. mount -a
+
+27. *df -h* :mounted xvdb
+28. Reboot system
+29. *df -h* :still can see as mounted
