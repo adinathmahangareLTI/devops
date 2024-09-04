@@ -2,7 +2,7 @@
 2. Add new HTTP port 80 in security groups
 3. *yum update -y*
 
-4. *yum install httpd -y*
+4. *yum install httpd -y*   :Hypertext Transfer Protocol daemon
 5. *cd /var/www/html/*
 6. *cat>index.html*
    This is Adinath's Page
@@ -13,10 +13,10 @@
 11. You will be able to see website hosted on instance public ip add of aws
 
 12. Install some packages on base-ami
-    - *yum install vsftpd -y*
-    - *yum install cifs-utils -y*
-    - *yum install nfs-utils -y*
-    - *yum install tree -y*
+    - *yum install vsftpd -y*   :Very secure FTP daemon
+    - *yum install cifs-utils -y*   :Common Internet File System
+    - *yum install nfs-utils -y*   :Network File System
+    - *yum install tree -y*   :Produces a depth-indented listing of files
 13. *cd /tmp*
 14. *touch index.html{1..100}*  :which will create 100 files named index.html
 
