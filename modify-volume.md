@@ -7,7 +7,7 @@
 - create empty directory /bdata
 - mounted xvdb on /bdata :*mount /dev/xvdb /bdata*
 - or permanently mount by modifying fstab file: *vim /etc/fstab* (don't forget to restart daemons after this step: *systemd reload-daemons*, and *mount -a*)
-- move data from /hdata to /bdata :**mv /hdata/* /bdata** 
+- move data from /hdata to /bdata : __mv /hdata/* /bdata__ 
 
 ### Increasing size of external volume
 - select volume>>actions>>modify volume>>select new volume>>modify
@@ -21,7 +21,7 @@
 - Create new instance with desired size and attach it with our instance
 - create new directory :*mkdir /cdata*
 - mount xvdc on /cdata temporarily and permanently(in /etc/fstab): *mount /dev/xvdc /cdata*
-- move data from bdata to cdata :**mv /bdata/* /cdata**
+- move data from bdata to cdata :__mv /bdata/* /cdata__
 - unmount the xvdc: *umount /dev/xvdc* (or unmount permanently by commenting out the line from /etc/fstab)
 - dettach the volume, and delete the volume
 - *df -h* :to display result of decrease in size of extended volume
