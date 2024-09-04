@@ -21,14 +21,15 @@
 14. *touch index.html{1..100}*  :which will create 100 files named index.html
 
 15. Now stop the instance
-16. Create custom-ami from Actions, with same security group, key-pair, subnet.
+16. Create image from Actions, with same security group, key-pair, subnet.
 17. Start the base instance
     
 19. Create new instance with created custom ami
-20. Copy public ip addr and check if it is shwoing content in index.html
-21. Connect to local device via ssh
-22. Go in /tmp, and check if all files are available
-23. Check package availability using rpmquery command, ex. *rpmquery vsftpd*
+20. While connecting via ssh, change root to ec2user
+21. Copy public ip addr and check if it is shwoing content in index.html
+22. Connect to local device via ssh
+23. Go in /tmp, and check if all files are available
+24. Check package availability using rpmquery command, ex. *rpmquery vsftpd*
 
     Successfully used custom-ami
     
