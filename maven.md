@@ -33,7 +33,7 @@ Maven-Integration
 
 4. Installing and configuring Maven
     - Install git on jenkins server: *yum install maven*
-    - Check maven version: *maven --version*
+    - Check maven version: *mvn --version*
     - On jenkins dashboard install plugin **Maven Integration**
     - In installed plugins >> search github >> disable second >> enable third
     - In tools >> add java jdk path and maven path >> restart jenkins
