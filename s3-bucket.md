@@ -24,6 +24,3 @@
    - touch index.html
    - check in s3 bucket, file will be visible
 6. To view file, change permissions
-   
-  
-   - 
