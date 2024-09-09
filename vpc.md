@@ -35,4 +35,6 @@
   - connectivity type public
   - allocate Elastic IP
 
-8.    
+8. Important tip: Add route of each other after perring in outer-rt like 10.0.0.0/16
+9. Use scp index.html root@10.0.1.178:/tmp
+    
