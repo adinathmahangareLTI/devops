@@ -1,0 +1,7 @@
+- rpmquery docker
+- yum install docker -y
+- docker info
+- systemctl start docker
+- systemctl enable docker
+- docker info
+  
