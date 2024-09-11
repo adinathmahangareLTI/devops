@@ -50,6 +50,9 @@ ctrl + p  + ctrl + q    Outside of webapp-01
 - ls (index.html still visible)
 
 
+- docker commit webapp-01 nginx-image:latest
+
+
 
 
 
