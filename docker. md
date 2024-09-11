@@ -51,6 +51,8 @@ ctrl + p  + ctrl + q    Outside of webapp-01
 
 
 - docker commit webapp-01 nginx-image:latest
+- docker tag <image_id> ngnix:image:latest
+
 
 
 
