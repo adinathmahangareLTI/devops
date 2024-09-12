@@ -62,5 +62,9 @@
 
 - kubectl describe pod sample-nginx-5b965d776f-dcpnm
 
+- vim myfirstpod.yml
+- kubectl apply -f myfirstpod.yml
+  
+
 ### Deleteing Cluster
 - kops delete cluster dev.k8s.adinathbucket23.in --yes
