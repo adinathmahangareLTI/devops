@@ -60,5 +60,7 @@
 - kubectl get deployments
 - kubectl -n kube-system get po
 
+- kubectl describe pod sample-nginx-5b965d776f-dcpnm
+
 ### Deleteing Cluster
 - kops delete cluster dev.k8s.adinathbucket23.in --yes
