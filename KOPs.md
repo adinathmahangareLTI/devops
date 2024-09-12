@@ -58,6 +58,7 @@
 - kubectl get services -o wide
 - kubectl get pods
 - kubectl get deployments
+- kubectl -n kube-system get po
 
 ### Deleteing Cluster
 - kops delete cluster dev.k8s.adinathbucket23.in --yes
