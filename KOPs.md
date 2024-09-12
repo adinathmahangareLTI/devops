@@ -29,17 +29,17 @@
 ### Create a Route53 private hosted zone with the same name as s3-bucket
 
 ### creating aws s3 bucket 
-- aws s3 mb s3://dev.k8s.adinathbucket23.in
+- aws s3 mb s3://dev.k8s.adinathbucket18.in
 - aws s3 ls
-- export KOPS_STATE_STORE=s3://dev.k8s.adinathbucket23.in
+- export KOPS_STATE_STORE=s3://dev.k8s.adinathbucket18.in
 
 ### generating ssh-key
 - ssh-keygen
 
 ### creating cluster
-- kops create cluster --cloud=aws --zones=ap-south-1a --name=dev.k8s.adinathbucket23.in --dns-zone=adinathbucket23.in --dns private
+- kops create cluster --cloud=aws --zones=ap-south-1a --name=dev.k8s.adinathbucket18.in --dns-zone=adinathbucket23.in --dns private
 
-- kops update cluster dev.k8s.adinathbucket23.in --yes --admin
+- kops update cluster dev.k8s.adinathbucket18.in --yes --admin
 
 ### validating cluster
 - kops validate cluster (wait for 5-10 minutes)
