@@ -29,7 +29,7 @@
 - ssh-keygen
   
 ### Create a Node Group
- eksctl create nodegroup \\
+ eksctl create nodegroup \
   --cluster adinath-cluster \
   --region ap-south-1 \
   --name my-node-group \
