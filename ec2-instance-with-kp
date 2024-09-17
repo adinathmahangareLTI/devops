@@ -1,0 +1,27 @@
+- name: Create EC2 instance
+  hosts: local
+  gather_facts: False
+  tasks:
+    - name: Create a new key pair
+      amazon.aws.ec2_key:
+        name: my-mumbai-kp
+        region: ap-south-1
+      register: key_pair
+
+    - name: Save the private key to a file
+      copy:
+        content: "{{ key_pair.key.private_key }}"
+        dest: "~/.ssh/my_key_pair.pem"
+        mode: '0600'
+
+    - name: Launch EC2 instance
+      amazon.aws.ec2_instance:
+        key_name: my-mumbai-kp
+        instance_type: t2.micro
+        image_id: ami-08718895af4dfa033
+        region: ap-south-1
+        wait: yes
+        count: 1
+        tags:
+          Name: Ansible_EC2
+      register: ec2
