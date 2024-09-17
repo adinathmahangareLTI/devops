@@ -1,4 +1,4 @@
-- install httpd on controller: ::yum install httpd -y::
+- install httpd on controller: == yum install httpd -y ==
 - make some changes in config file of httpd package: ::vim /etc/httpd/conf/httpd.conf::
 - copy httpd.conf file to ansible directory: ::mv /etc/httpd/conf/httpd.conf /etc/ansible::
 - create one index.html file in /etc/ansible with some data
