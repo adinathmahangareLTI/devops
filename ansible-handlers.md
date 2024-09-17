@@ -3,7 +3,7 @@
 - copy httpd.conf file to ansible directory: ::mv /etc/httpd/conf/httpd.conf /etc/ansible::
 - create one index.html file in /etc/ansible with some data
 - create one file handler.yml with below content:
-'''
+```yaml
 ---
 - name: configure apache with handler
   hosts: all
@@ -70,6 +70,6 @@
         state: restarted
         enabled: true
 
-'''
+```
 
   
