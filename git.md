@@ -11,7 +11,7 @@
 - *git checkout <branch_name>* move to another branch
 - *git checkout -b <branch_name>* create new branch and move to that branch
 - *git remote*              display current remote present, -v: includes url of remote
-- *git remote add orgin <http_path_to_remote_repo> add remote to local repo
+- *git remote add orgin <http_path_to_remote_repo>* add remote to local repo
 - *git push <remote_name> <branch_name>* push branch to remote repo
 - *git merge <branch_name>* merge another branch on current branch
 - *git clone <http_path_to_remote_repo>* cloning remote repo in current directory
