@@ -48,3 +48,6 @@
 
  ### When You want to delete cluster
  eksctl delete cluster --name adinath-cluster
+
+
+ 
